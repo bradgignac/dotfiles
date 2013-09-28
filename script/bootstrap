@@ -23,4 +23,4 @@ brew cleanup
 # Install Homebrew and Homebrew Cask formulas.
 brew install bash brew-cask git
 brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
-brew cask alfred
+brew cask alfred link
