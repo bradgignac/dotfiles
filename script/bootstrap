@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Verify that XCode is installed.
+if [[ ! "$(type -P gcc)" && "$OSTYPE" =~ ^darwin ]]; then
+  e_error "XCode or the XCode Command Line Tools must be installed first."
+  exit 1
+fi
+
+# Install Homebrew.
+if [[ ! "$(type -P brew)" ]]; then
+  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+fi
+
+# Install Homebrew Cask.
+if [ ! "$(brew tap | grep phinze/cask)" ]; then
+  brew tap phinze/cask
+fi
+
+# Update Homebrew and Homebrew Cask.
+brew update
+brew cleanup
+
+# Install Homebrew and Homebrew Cask formulas.
+brew install bash brew-cask git
+brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
