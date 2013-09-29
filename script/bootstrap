@@ -1,5 +1,7 @@
 #!/bin/sh
 
+CURRENT_DIRECTORY="`pwd`"
+
 # Verify that XCode is installed.
 if [[ ! "$(type -P gcc)" && "$OSTYPE" =~ ^darwin ]]; then
   e_error "XCode or the XCode Command Line Tools must be installed first."
@@ -26,7 +28,11 @@ brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools l
 brew cask alfred link
 
 # Checkout dotfiles repository.
-git clone https://github.com/bradgignac/dotfiles $HOME/.dotfiles
+if [ -d "$HOME/.dotfiles" ]; then
+  cd $HOME/.dotfiles && git pull origin master && cd $CURRENT_DIRECTORY
+else
+  git clone https://github.com/bradgignac/dotfiles $HOME/.dotfiles
+fi
 
 # Symlink dotfiles.
 for source in `find $HOME/.dotfiles -name "*.symlink"`
