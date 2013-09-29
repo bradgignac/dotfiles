@@ -26,11 +26,11 @@ brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools l
 brew cask alfred link
 
 # Checkout dotfiles repository.
-git clone https://github.com/bradgignac/dotfiles ~/.dotfiles
+git clone https://github.com/bradgignac/dotfiles $HOME/.dotfiles
 
 # Symlink dotfiles.
-for source in `find ~/.dotfiles -name "*.symlink"`
+for source in `find $HOME/.dotfiles -name "*.symlink"`
 do
-  destination="~/`basename \"${source%.*}\"`"
+  destination="$HOME/`basename \"${source%.*}\"`"
   ln -s $source $destination
 done
