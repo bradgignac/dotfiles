@@ -38,5 +38,5 @@ fi
 for source in `find $HOME/.dotfiles -name "*.symlink"`
 do
   destination="$HOME/`basename \"${source%.*}\"`"
-  ln -s $source $destination
+  ln -fs $source $destination
 done
