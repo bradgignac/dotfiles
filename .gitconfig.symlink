@@ -1,0 +1,22 @@
+[user]
+  name = Brad Gignac
+  email = bgignac@bradgignac.com
+
+[core]
+  editor = subl -w
+  excludesfile = ~/.gitignore
+
+[credential]
+  helper = osxkeychain
+
+[color]
+  ui = true
+
+[diff]
+  tool = vimdiff
+
+[github]
+  user = bradgignac
+
+[push]
+  default = matching
