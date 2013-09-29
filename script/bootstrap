@@ -40,3 +40,6 @@ do
   destination="$HOME/`basename \"${source%.*}\"`"
   ln -fs $source $destination
 done
+
+# Immediately load profile changes.
+source $HOME/.bash_profile
