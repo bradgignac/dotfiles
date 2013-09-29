@@ -24,3 +24,13 @@ brew cleanup
 brew install bash brew-cask git
 brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
 brew cask alfred link
+
+# Checkout dotfiles repository.
+git clone https://github.com/bradgignac/dotfiles ~/.dotfiles
+
+# Symlink dotfiles.
+for source in `find ~/Work/Code/bradgignac/dotfiles -name "*.symlink"`
+do
+  destination="~/`basename \"${source%.*}\"`"
+  ln -s $source $destination
+done
