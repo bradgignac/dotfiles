@@ -23,7 +23,7 @@ brew update
 brew cleanup
 
 # Install Homebrew and Homebrew Cask formulas.
-brew install bash brew-cask git
+brew install bash brew-cask git rbenv ruby-build
 brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
 brew cask alfred link
 
