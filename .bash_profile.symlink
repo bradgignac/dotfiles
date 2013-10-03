@@ -1,4 +1,6 @@
 export EDITOR='subl -w'
 export PATH="/usr/local/bin:$PATH"
 
+source /usr/local/etc
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
