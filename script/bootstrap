@@ -23,7 +23,7 @@ brew update
 brew cleanup
 
 # Install Homebrew and Homebrew Cask formulas.
-brew install bash brew-cask git node phantomjs python rbenv ruby-build
+brew install bash brew-cask git node phantomjs python rbenv ruby-build the_silver_searcher
 brew cask install alfred dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
 brew cask alfred link
 
