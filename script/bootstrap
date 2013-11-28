@@ -34,6 +34,9 @@ else
   git clone https://github.com/bradgignac/dotfiles $HOME/.dotfiles
 fi
 
+# Symlink Sublime Text binary.
+ln -fs "~/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
+
 # Symlink dotfiles.
 for source in `find $HOME/.dotfiles -name "*.symlink"`
 do
