@@ -35,7 +35,7 @@ else
 fi
 
 # Symlink Sublime Text binary.
-ln -s "$HOME/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+ln -fs "$HOME/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 # Symlink dotfiles.
 for source in `find $HOME/.dotfiles -name "*.symlink"`
