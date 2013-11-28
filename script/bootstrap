@@ -23,8 +23,8 @@ brew update
 brew cleanup
 
 # Install Homebrew and Homebrew Cask formulas.
-brew install bash brew-cask git node packer phantomjs python rbenv ruby-build the_silver_searcher
-brew cask install alfred caffeine dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
+brew install bash brew-cask git node packer phantomjs python rbenv ruby-build the_silver_searcher tmux
+brew cask install airfoil alfred caffeine dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
 brew cask alfred link
 
 # Checkout dotfiles repository.
