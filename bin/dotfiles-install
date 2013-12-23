@@ -24,3 +24,6 @@ brew cleanup
 brew install bash brew-cask git node packer phantomjs python rbenv ruby-build the_silver_searcher tmux
 brew cask install airfoil alfred caffeine dropbox google-chrome-canary google-hangouts gpgtools linkinus one-password spotify sublime-text vagrant virtualbox
 brew cask alfred link
+
+# Install Monokai Terminal theme.
+open "${HOME}/.dotfiles/terminal/Monokai.terminal"
