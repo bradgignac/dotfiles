@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# Install all software updates.
-sudo softwareupdate -ia
-
-# Update and upgrade Homebrew.
-brew update
-brew upgrade
-brew cleanup
