@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+# TODO: Print usage.
+# TODO: Colorize output.
+
+if [ "$#" -eq 0 ]; then
+  echo "Error: No command provided."
+  exit 1
+fi
+
+$HOME/.dotfiles/bin/dotfiles-$1

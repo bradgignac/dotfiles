@@ -1,0 +1,31 @@
+#! /usr/bin/env bash
+
+log () {
+  echo -e "\e[1m==> $@\e[0m"
+}
+
+TAPS="caskroom/cask caskroom/versions homebrew/versions thoughtbot/formulae"
+FORMULAS="bash brew-cask chruby cloc git go phantomjs python rcm ruby-install the_silver_searcher tmux vim zsh"
+CASKS="atom cloudup google-chrome google-chrome-canary heroku-toolbelt vagrant virtualbox"
+
+if command -v brew > /dev/null 2>&1; then
+  log "Updating Homebrew..."
+  brew update
+else
+  log "Installing Homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+log "Tapping additional repositories..."
+for tap in $TAPS; do
+  brew tap $tap
+done
+
+log "Installing formulas..."
+brew install $FORMULAS
+
+log "Installing casks..."
+brew cask install $CASKS
+
+brew cleanup
+brew cask cleanup

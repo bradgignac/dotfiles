@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+log () {
+  echo -e "\e[1m==> $@\e[0m"
+}
+
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  log "Installing oh-my-zsh..."
+  git clone https://github.com/robbyrussell/oh-my-zsh
+fi
+
+log "Updating dotfiles..."
+git -C $HOME/.dotfiles pull origin && rcup
+
+
+ZSH_PATH=$(which zsh)
+if [ $SHELL != "$ZSH_PATH" ]; then
+  log "Setting zsh as default shell..."
+  echo $ZSH_PATH >> sudo tee -a /etc/shells
+  chsh -s $ZSH_PATH
+fi

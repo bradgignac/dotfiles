@@ -1,0 +1,32 @@
+#! /usr/bin/env bash
+
+log () {
+  echo -e "\e[1m==> $@\e[0m"
+}
+
+is_missing_xcode () {
+  xcode-select --print-path > /dev/null 2>&1
+
+  if [ $? -eq 0 ]; then
+    return 1
+  else
+    return 0
+  fi
+}
+
+if is_missing_xcode; then
+  log "Installing Xcode Command Line Tools..."
+  xcode-select --install > /dev/null 2>&1
+
+  while is_missing_xcode; do
+    sleep 5
+  done
+fi
+
+if [ ! -d "$HOME/.dotfiles" ]; then
+  log "Cloning dotfiles..."
+  git clone https://github.com/bradgignac/dotfiles
+fi
+
+$HOME/.dotfiles/bin/dotfiles-brew
+$HOME/.dotfiles/bin/dotfiles-shell
