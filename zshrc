@@ -6,5 +6,6 @@ plugins=(brew brew-cask git golang osx)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$HOME/.dotfiles/bin:/usr/local/bin:$PATH
 export EDITOR='atom'
+export GOPATH=$HOME/work/go
+export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:/usr/local/bin:$PATH
