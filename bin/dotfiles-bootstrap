@@ -25,7 +25,7 @@ fi
 
 if [ ! -d "$HOME/.dotfiles" ]; then
   log "Cloning dotfiles..."
-  git clone https://github.com/bradgignac/dotfiles
+  git clone https://github.com/bradgignac/dotfiles .dotfiles
 fi
 
 $HOME/.dotfiles/bin/dotfiles-brew
