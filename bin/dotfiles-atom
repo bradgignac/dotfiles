@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+log () {
+  echo -e "\e[1m==> $@\e[0m"
+}
+
+error () {
+  echo -e "\e[31;1m$@\e[0m"
+}
+
+PACKAGES="autocomplete-plus editorconfig emmet go-plus linter linter-flake8 linter-jshint monokai"
+
+if ! command -v apm > /dev/null 2>&1; then
+  error "apm is not installed!"
+  exit 1
+fi
+
+log "Installing Atom packages..."
+for package in $PACKAGES; do
+  apm install $package
+done

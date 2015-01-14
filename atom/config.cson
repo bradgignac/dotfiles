@@ -1,0 +1,14 @@
+'global':
+  'exception-reporting':
+    'userId': '8aae0582-4aed-2056-2f7a-dc3eb2ba8be2'
+  'welcome':
+    'showOnStartup': false
+  'core':
+    'themes': [
+      'monokai'
+    ]
+    'destroyEmptyPanes': false
+  'editor':
+    'invisibles': {}
+  'linter': {}
+  'emmet': {}
