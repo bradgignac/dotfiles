@@ -5,8 +5,8 @@ log () {
 }
 
 TAPS="caskroom/cask caskroom/versions homebrew/versions thoughtbot/formulae"
-FORMULAS="bash brew-cask chruby cloc git go nodejs phantomjs python rcm ruby-install selecta ssh-copy-id the_silver_searcher tmux vim zsh"
-CASKS="atom cloudup google-chrome google-chrome-canary gpgtools heroku-toolbelt sauce spotify vagrant virtualbox xscope"
+FORMULAS="bash brew-cask bzr chruby cloc git go nodejs phantomjs python rcm ruby-install selecta ssh-copy-id the_silver_searcher tmux vim zsh"
+CASKS="atom cloudup flashlight google-chrome google-chrome-canary gpgtools heroku-toolbelt sauce spotify vagrant virtualbox xscope"
 
 if command -v brew > /dev/null 2>&1; then
   log "Updating Homebrew..."
