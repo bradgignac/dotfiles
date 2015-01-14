@@ -5,10 +5,10 @@
     'showOnStartup': false
   'core':
     'themes': [
+      'atom-dark-ui'
       'monokai'
     ]
     'destroyEmptyPanes': false
   'editor':
-    'invisibles': {}
+    'softWrapAtPreferredLineLength': true
   'linter': {}
-  'emmet': {}
