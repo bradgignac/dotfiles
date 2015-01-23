@@ -11,4 +11,5 @@
     'destroyEmptyPanes': false
   'editor':
     'softWrapAtPreferredLineLength': true
+    'useShadowDOM': true
   'linter': {}
