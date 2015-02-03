@@ -8,7 +8,7 @@ error () {
   echo -e "\e[31;1m$@\e[0m"
 }
 
-PACKAGES="autocomplete-plus editorconfig emmet go-plus linter linter-flake8 linter-jshint monokai"
+PACKAGES="autocomplete-plus editorconfig emmet go-plus language-lua linter linter-flake8 linter-jshint monokai react"
 
 if ! command -v apm > /dev/null 2>&1; then
   error "apm is not installed!"
