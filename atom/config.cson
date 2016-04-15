@@ -1,19 +1,32 @@
 "*":
-  "exception-reporting":
-    userId: "8aae0582-4aed-2056-2f7a-dc3eb2ba8be2"
-  welcome:
-    showOnStartup: false
+  "atom-typescript": {}
   core:
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "linter-eslint"
+    ]
     themes: [
-      "atom-dark-ui"
+      "one-dark-ui"
       "monokai"
     ]
-    destroyEmptyPanes: false
   editor:
+    fontSize: 27
+    invisibles: {}
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
-  linter: {}
-  react:
-    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
-    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
-    decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
+  "exception-reporting":
+    userId: "8aae0582-4aed-2056-2f7a-dc3eb2ba8be2"
+  linter:
+    ignoredLinterErrors: [
+      "jshint"
+    ]
+    subtleLinterErrors: [
+      "flake8"
+    ]
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  react: {}
+  "rst-preview-pandoc": {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
