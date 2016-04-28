@@ -15,7 +15,5 @@ export NVM_DIR=$HOME/.nvm
 export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:/usr/local/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
-eval $(docker-machine env)
-
 # added by travis gem
 [ -f /Users/bradgignac/.travis/travis.sh ] && source /Users/bradgignac/.travis/travis.sh

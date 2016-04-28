@@ -26,7 +26,8 @@
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   react: {}
-  "rst-preview-pandoc": {}
+  "rst-preview-pandoc":
+    pandocOpts: "-fmarkdown_github -thtml --webtex"
   "tree-view": {}
   welcome:
     showOnStartup: false
