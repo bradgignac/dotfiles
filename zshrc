@@ -5,13 +5,9 @@ export ZSH_THEME="avit"
 plugins=(brew brew-cask golang osx)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-source /usr/local/opt/nvm/nvm.sh
 
 export EDITOR='atom -w'
 export GOPATH=$HOME/work/go
-export NVM_DIR=$HOME/.nvm
 export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:/usr/local/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
