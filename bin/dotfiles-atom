@@ -8,7 +8,7 @@ error () {
   echo -e "\e[31;1m$@\e[0m"
 }
 
-PACKAGES="atom-typescript autocomplete-plus editorconfig emmet go-plus language-ejs language-docker language-lua language-terraform linter linter-eslint linter-flake8 monokai react"
+PACKAGES="atom-typescript autocomplete-plus editorconfig emmet go-plus language-ejs language-docker language-groovy language-lua language-terraform linter linter-eslint linter-flake8 monokai react"
 
 if ! command -v apm > /dev/null 2>&1; then
   error "apm is not installed!"

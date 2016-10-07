@@ -10,8 +10,9 @@
       "monokai"
     ]
   editor:
-    fontSize: 27
+    fontSize: 28
     invisibles: {}
+    showIndentGuide: true
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
   "exception-reporting":
