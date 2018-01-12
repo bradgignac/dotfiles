@@ -1,6 +1,7 @@
 [user]
-  name = Brad Gignac
+  name = bradgignac
   email = bgignac@bradgignac.com
+	signingKey = 910F400F
 
 [core]
   editor = atom -w
@@ -21,5 +22,12 @@
 [push]
   default = matching
 
-[url "https://"]   
+[url "https://"]
     insteadOf = git://
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
