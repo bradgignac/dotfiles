@@ -1,5 +1,5 @@
 notes() {
-  atom $(ls ~/notes | sort | uniq | selecta)
+  atom $(find ~/notes -not -path "*/.git*" | sort | uniq | selecta)
 }
 
 work() {
