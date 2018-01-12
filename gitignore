@@ -1,4 +1,5 @@
 .DS_Store
 .envrc
 .secrets
+zsh/private.zsh
 TODO.md
