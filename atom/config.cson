@@ -4,19 +4,25 @@
     destroyEmptyPanes: false
     disabledPackages: [
       "linter-eslint"
+      "linter-flake8"
     ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "monokai"
     ]
   editor:
-    fontSize: 28
+    fontSize: 32
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
   "exception-reporting":
     userId: "8aae0582-4aed-2056-2f7a-dc3eb2ba8be2"
+  "go-plus":
+    panel:
+      currentHeight: "25.851938895417153vh"
   linter:
     ignoredLinterErrors: [
       "jshint"
@@ -26,6 +32,9 @@
     ]
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
+  "linter-ui-default":
+    panelHeight: 69
+    showPanel: true
   react: {}
   "rst-preview-pandoc":
     pandocOpts: "-fmarkdown_github -thtml --webtex"
