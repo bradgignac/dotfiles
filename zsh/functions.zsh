@@ -1,3 +1,7 @@
+notes() {
+  atom $(ls ~/notes | sort | uniq | selecta)
+}
+
 work() {
   cd $({ find ~/work -maxdepth 2 -type d ; find ~/work/go/src -maxdepth 3 -type d } | sort | uniq | selecta)
 }
