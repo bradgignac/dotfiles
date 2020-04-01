@@ -4,7 +4,7 @@
 	signingKey = 910F400F
 
 [core]
-  editor = atom -w
+  editor = code --wait
   excludesfile = ~/.gitignore
 
 [credential]
@@ -24,12 +24,15 @@
 
 [url "https://"]
     insteadOf = git://
+
 [commit]
 	gpgsign = true
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+
 [pager]
 	branch = false
