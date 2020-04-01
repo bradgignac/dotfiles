@@ -39,7 +39,7 @@ export SPACESHIP_PROMPT_ORDER=(
 )
 export SPACESHIP_GIT_STATUS_SHOW="false"
 
-plugins=(brew brew-cask docker docker-compose golang osx terraform)
+plugins=(brew docker docker-compose golang osx terraform)
 
 source $ZSH/oh-my-zsh.sh
 eval "$(direnv hook zsh)"
