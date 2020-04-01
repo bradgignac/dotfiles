@@ -13,16 +13,20 @@
       "monokai"
     ]
   editor:
-    fontSize: 32
+    fontFamily: "FiraCode-Light, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 40
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
     useShadowDOM: true
   "exception-reporting":
     userId: "8aae0582-4aed-2056-2f7a-dc3eb2ba8be2"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "go-plus":
     panel:
-      currentHeight: "25.851938895417153vh"
+      currentHeight: "12.437095614665708vh"
   linter:
     ignoredLinterErrors: [
       "jshint"
@@ -34,10 +38,10 @@
     disableWhenNoEslintrcFileInPath: true
   "linter-ui-default":
     panelHeight: 69
-    showPanel: true
   react: {}
   "rst-preview-pandoc":
     pandocOpts: "-fmarkdown_github -thtml --webtex"
   "tree-view": {}
   welcome:
     showOnStartup: false
+  whitespace: {}
