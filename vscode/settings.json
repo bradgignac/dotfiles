@@ -1,0 +1,24 @@
+{
+    "editor.fontSize": 28,
+    "editor.fontLigatures": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabCompletion": true,
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Monokai",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        100
+    ],
+    "window.zoomLevel": 0,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terraform.editor.formatOnSave": false,
+    "go.autocompleteUnimportedPackages": true,
+    "go.formatTool": "goimports",
+    "go.coverOnSingleTest": true,
+    "go.coverOnSave": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "python.jediEnabled": false
+}
