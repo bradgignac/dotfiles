@@ -7,7 +7,7 @@ plugins=(brew brew-cask docker docker-compose golang osx terraform)
 source $ZSH/oh-my-zsh.sh
 eval "$(direnv hook zsh)"
 
-export EDITOR='atom -w'
+export EDITOR='code -w'
 export GOPATH=$HOME/work/go
 export NVM_DIR="$HOME/.nvm"
 export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:/usr/local/bin:$PATH
@@ -31,3 +31,7 @@ fi
 if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
   . "/usr/local/opt/nvm/nvm.sh"
 fi
+
+# Activate chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
