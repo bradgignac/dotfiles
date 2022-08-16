@@ -24,7 +24,7 @@ export SPACESHIP_PROMPT_ORDER=(
   aws           # Amazon Web Services section
   venv          # virtualenv section
   # conda         # conda virtualenv section
-  # pyenv         # Pyenv section
+  pyenv         # Pyenv section
   # dotnet        # .NET section
   # ember         # Ember.js section
   # kubecontext   # Kubectl context section
@@ -44,24 +44,13 @@ plugins=(brew docker docker-compose golang osx terraform)
 source $ZSH/oh-my-zsh.sh
 eval "$(direnv hook zsh)"
 
+export AWS_PAGER=""
 export EDITOR='code -w'
 export GOPATH=$HOME/work/go
 export NVM_DIR="$HOME/.nvm"
-export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:/usr/local/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:$PYENV_ROOT/bin:/usr/local/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# added by travis gem
-[ -f /Users/bradgignac/.travis/travis.sh ] && source /Users/bradgignac/.travis/travis.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /usr/local/src/google-cloud-sdk/path.zsh.inc ]; then
-  source '/usr/local/src/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /usr/local/src/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/usr/local/src/google-cloud-sdk/completion.zsh.inc'
-fi
 
 # Activate nvm
 if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
@@ -69,8 +58,24 @@ if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
 fi
 
 # Activate pyenv
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # Activate chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/brad4094/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/brad4094/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/brad4094/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/brad4094/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+export PATH="$HOME/.poetry/bin:$PATH"
