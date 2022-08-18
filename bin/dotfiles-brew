@@ -15,4 +15,3 @@ fi
 log "Installing from Brewfile..."
 brew bundle
 brew cleanup
-brew cask cleanup

@@ -30,4 +30,3 @@ fi
 
 $HOME/.dotfiles/bin/dotfiles-brew
 $HOME/.dotfiles/bin/dotfiles-shell
-$HOME/.dotfiles/bin/dotfiles-atom

@@ -19,3 +19,8 @@ if [ $SHELL != "$ZSH_PATH" ]; then
   echo $ZSH_PATH | sudo tee -a /etc/shells
   chsh -s $ZSH_PATH
 fi
+
+log "Installing Spaceship theme..."
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
