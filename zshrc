@@ -39,7 +39,7 @@ export SPACESHIP_PROMPT_ORDER=(
 )
 export SPACESHIP_GIT_STATUS_SHOW="false"
 
-plugins=(brew docker docker-compose golang osx terraform)
+plugins=(brew docker docker-compose golang terraform)
 
 source $ZSH/oh-my-zsh.sh
 eval "$(direnv hook zsh)"
@@ -62,8 +62,8 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # Activate chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/brad4094/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/brad4094/Downloads/google-cloud-sdk/path.zsh.inc'; fi
