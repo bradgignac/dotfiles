@@ -1,7 +1,7 @@
 [user]
-	name = bradgignac
-	email = bgignac@bradgignac.com
-	signingKey = 910F400F
+  name = bradgignac
+  email = bgignac@bradgignac.com
+  signingKey = 986B5E38ADD6DFF4
 
 [core]
   editor = code --wait
