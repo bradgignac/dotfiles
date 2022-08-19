@@ -82,3 +82,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # Created by `pipx` on 2022-08-18 17:26:19
 export PATH="$PATH:/Users/brad4094/.local/bin"
+
+# 1Password CLI
+eval "$(op completion zsh)"; compdef _op op

@@ -28,6 +28,7 @@ brew 'the_silver_searcher'
 brew 'zsh'
 
 cask '1password'
+cask '1password/tap/1password-cli'
 cask 'alfred'
 cask 'font-fira-code'
 cask 'gpg-suite'
