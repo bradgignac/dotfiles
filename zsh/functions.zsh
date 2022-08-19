@@ -1,9 +1,9 @@
 notes() {
-  atom $(find ~/notes -not -path "*/.git*" | sort | uniq | selecta)
+  code $(find ~/notes -not -path "*/.git*" | sort | uniq | selecta)
 }
 
 work() {
-  cd $({ find ~/work -maxdepth 2 -type d ; find ~/work/go/src -maxdepth 3 -type d } | sort | uniq | selecta)
+  cd $({ find ~/work -maxdepth 2 -type d } | sort | uniq | selecta)
 }
 
 search() {
