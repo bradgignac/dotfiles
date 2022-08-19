@@ -16,6 +16,7 @@ brew 'git-lfs'
 brew 'go'
 brew 'httpie'
 brew 'jq'
+brew 'mas'
 brew 'nvm'
 brew 'pipx'
 brew 'pyenv'
@@ -36,3 +37,6 @@ cask 'slack'
 cask 'spectacle'
 cask 'visual-studio-code'
 cask 'xscope'
+
+mas 'Amphetamine', id: 937984704
+mas '1Password for Safari', id: 1569813296
