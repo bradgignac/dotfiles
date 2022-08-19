@@ -49,7 +49,7 @@ export EDITOR='code -w'
 export GOPATH=$HOME/work/go
 export NVM_DIR="$HOME/.nvm"
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH=$HOME/.dotfiles/bin:$GOPATH/bin:$PYENV_ROOT/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:$HOME/.local/bin:$GOPATH/bin:$PYENV_ROOT/bin:/usr/local/bin:$PATH
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # Activate nvm
@@ -79,3 +79,6 @@ export PATH="$HOME/.serverless/bin:$PATH"
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# Created by `pipx` on 2022-08-18 17:26:19
+export PATH="$PATH:/Users/brad4094/.local/bin"
