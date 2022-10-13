@@ -26,6 +26,7 @@ brew 'selecta'
 brew 'ssh-copy-id'
 brew 'tfenv'
 brew 'the_silver_searcher'
+brew 'tree'
 brew 'zsh'
 
 cask '1password'
