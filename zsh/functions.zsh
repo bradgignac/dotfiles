@@ -1,3 +1,11 @@
+note() {
+  local name=$1
+  local date=$(date '+%Y-%m-%d')
+  local filename=~/notes/$date-$name.md
+  touch $filename
+  code $filename
+}
+
 notes() {
   code $(find ~/notes -not -path "*/.git*" | sort | uniq | selecta)
 }
