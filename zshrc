@@ -53,9 +53,8 @@ export PATH=$HOME/.dotfiles/bin:$HOME/.local/bin:$GOPATH/bin:$PYENV_ROOT/bin:/us
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # Activate nvm
-if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
-  . "/usr/local/opt/nvm/nvm.sh"
-fi
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # Activate pyenv
 eval "$(pyenv init --path)"
