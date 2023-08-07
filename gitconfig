@@ -1,7 +1,7 @@
 [user]
   name = bradgignac
   email = bgignac@bradgignac.com
-  signingKey = 986B5E38ADD6DFF4
+  signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDW1h3gWoHkOV50ng3w0PvidOf3Qb7vrEB9PoPii+CN2UxXtg30wjFR+EB5HNVyI0X6j08umO1CM1xeW27Dhd5iqccj9ic5uZaBYYWyzTVg/ufgUH+AUMFm1ABp3ZYdAp7pDULnkQTAqpBauwIF09cJN0xH0JyzGQ/ATNSzfH6lBO0WIxKqQtR/YNI5C3m5UunJMMd/WCJy567uXRabidJDPF8qBYJ7k0sI8EfLAztGbmyy6v+srk0ZNE+ygOoqvkkkEqP29yqLgTCb5zaAP6EqMtnnFEcG6RG2AcPsX2JUOzxdaDLX0iV6odUqHSLzAjf3/wiD5EQ318DoF+0LByj3
 
 [core]
   editor = code --wait
@@ -36,3 +36,9 @@
 
 [pager]
 	branch = false
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
